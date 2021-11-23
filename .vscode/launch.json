@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AppsecurityApplication<appsecurity>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.aforo255.appsecurity.AppsecurityApplication",
+            "projectName": "appsecurity",
+            "args": ""
+        }
+    ]
+}
