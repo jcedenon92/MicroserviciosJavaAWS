@@ -5,15 +5,19 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 @Document(collection = "movement")
-public class MovementModel {
+public class MovementModel implements Serializable{
+
+    private static final long serialVersionUID = 1L;
+
     @BsonId
 	private String id ; 
     private Integer transactionId;
-	private double amount ;
+	private double amount;
 	private String type;
 	private Integer accountId;
     private String creationDate;

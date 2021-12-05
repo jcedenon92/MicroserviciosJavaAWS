@@ -15,7 +15,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
  
 import com.fasterxml.jackson.databind.ObjectMapper;
  
-@Component
+//@Component
 public class TransactionConsumerListener {
 
     @Autowired
