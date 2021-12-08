@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.aforo255</groupId>
-	<artifactId>appsecurity</artifactId>
+	<artifactId>appgateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>appsecurity</name>
+	<name>appgateway</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
@@ -19,7 +19,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
 		<dependency>
@@ -27,18 +27,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+		<!-- SPRING CLOUD GATEWAY -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-			<version>2.5.5</version>
-		</dependency>
-
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.27</version>
-		</dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+		<!-- SPRING CLOUD GATEWAY -->
 
 		<!-- PAQUETES DE SEGURIDAD / GENERAR TOKEN  -->
 		<dependency>
@@ -58,7 +52,8 @@
 			<version>0.11.1</version>
 			<scope>runtime</scope>
 		</dependency>
-
+		<!-- PAQUETES DE SEGURIDAD / GENERAR TOKEN  -->
+		
 	</dependencies>
 
 	<build>
@@ -74,5 +69,17 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2020.0.4</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
