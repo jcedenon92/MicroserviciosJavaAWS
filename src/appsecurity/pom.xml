@@ -58,6 +58,18 @@
 			<version>0.11.1</version>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- PAQUETES DE SEGURIDAD / GENERAR TOKEN  -->
+
+		<!-- ZIPKIN -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<!-- ZIPKIN -->
 
 	</dependencies>
 
@@ -74,5 +86,17 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2020.0.4</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

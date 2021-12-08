@@ -13,7 +13,7 @@ import com.aforo255.appmovements.dtos.TransactionRequest;
 import com.aforo255.appmovements.models.MovementModel;
 import com.aforo255.appmovements.services.IMovementService;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
+//import com.fasterxml.jackson.databind.JsonMappingException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

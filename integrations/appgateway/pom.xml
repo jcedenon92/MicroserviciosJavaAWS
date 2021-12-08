@@ -53,6 +53,17 @@
 			<scope>runtime</scope>
 		</dependency>
 		<!-- PAQUETES DE SEGURIDAD / GENERAR TOKEN  -->
+
+		<!-- ZIPKIN -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<!-- ZIPKIN -->
 		
 	</dependencies>
 
